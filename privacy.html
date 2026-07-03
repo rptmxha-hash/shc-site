@@ -24,26 +24,36 @@
     외의 제3자 데이터를 수집·저장·공유하지 않습니다.
   </p>
 
-  <h2>2. 접근하는 데이터</h2>
+  <h2>2. YouTube 관련 데이터 접근</h2>
   <p>
     본 도구는 Google OAuth 2.0을 통해 운영자 본인의 Google 계정 인증을
-    받아 YouTube Data API v3(<code>youtube.upload</code> 등)를 사용해
-    본인 채널에 영상 업로드, 제목·설명·태그·썸네일 설정 등의 작업을
+    받아 <strong>YouTube Data API v3</strong>(<code>youtube.upload</code> 등 scope)를 사용해
+    본인의 <strong>YouTube 채널</strong>에 영상 업로드, 제목·설명·태그·썸네일 설정 등의 작업을
     수행합니다. 인증 토큰은 운영자 본인의 로컬 컴퓨터에만 저장되며
-    외부 서버로 전송되지 않습니다.
+    외부 서버로 전송되지 않습니다. 본 도구가 접근하는 YouTube 데이터는
+    운영자 본인 채널의 업로드 관리 기능에 한정되며, 다른 사용자의
+    YouTube 데이터에는 접근하지 않습니다.
   </p>
 
   <h2>3. 데이터 공유</h2>
   <p>본 도구는 수집·처리하는 어떠한 데이터도 제3자와 공유하지 않습니다.</p>
 
-  <h2>4. 데이터 보관·삭제</h2>
+  <h2>4. 데이터 보관 및 삭제 정책</h2>
   <p>
-    인증 토큰은 운영자가 도구 사용을 중단하거나 직접 삭제할 때까지
-    로컬에 보관되며, 언제든지 <a href="https://myaccount.google.com/permissions">Google 계정 권한 관리 페이지</a>에서
-    접근 권한을 철회할 수 있습니다.
+    인증 토큰(access/refresh token)은 운영자 본인의 로컬 컴퓨터에만
+    저장되며, 도구 사용을 중단하거나 로컬 파일을 직접 삭제하면 즉시
+    삭제됩니다. 별도의 서버나 클라우드에 데이터가 보관되지 않습니다.
+    운영자는 언제든지 <a href="https://myaccount.google.com/permissions">Google 계정 권한 관리 페이지</a>에서
+    본 도구의 접근 권한을 철회할 수 있으며, 철회 시 즉시 접근이 차단됩니다.
   </p>
 
-  <h2>5. 문의</h2>
+  <h2>5. Google 개인정보처리방침</h2>
+  <p>
+    본 도구는 Google API를 사용하며, Google API 사용에 대한 정보 처리는
+    <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>도 함께 적용됩니다.
+  </p>
+
+  <h2>6. 문의</h2>
   <p>rptmxha@gmail.com</p>
 
   <footer>
